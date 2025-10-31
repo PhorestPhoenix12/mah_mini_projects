@@ -61,3 +61,30 @@ body {
     display: none;
   }
 }
+
+
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  font-family: 'Muli', sans-serif;
+  color: #FDF6EC;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+nav a:hover,
+nav a.active {
+  background-color: #A3DA8D;
+  color: #052E27;
+}
