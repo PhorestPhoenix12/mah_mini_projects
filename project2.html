@@ -1,26 +1,53 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <header>
-      <h1 style="color: #fff">Loca-Lunch: Jeffrey</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="resources.html">Local Resources</a></li>
-          <li><a href="services.html">Munchy Mouse</a></li>
-          <li><a href="jeffrey.html" class="active">Munchy Mouse 2</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+   <link rel="stylesheet" type="text/css" href="project1.css">
+    <script>
+        // Js to give active class to the nav link
+        document.addEventListener("DOMContentLoaded", function() {
+            var links = document.querySelectorAll("nav ul li a");
+            var currentFile = window.location.pathname.split("/").pop();
+            for (var i = 0; i < links.length; i++) {
+                var linkFile = links[i].href.split("/").pop();
+                if (linkFile === currentFile) {
+                    links[i].classList.add("active");
+                }
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project1.html">Expanding Cards</a></li>
+                <li><a href="project2.html" class="active">Progression Steps</a></li>
+                <li><a href="project3.html">Rotating Navigation</a></li>
+            </ul>
+        </nav>
     </header>
-  <body>
-    <canvas data-processing-sources="index.java"></canvas>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>r
-  </body>
+      
+
+    <div class="container">
+      <div class="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="circle active">1</div>
+        <div class="circle">2</div>
+        <div class="circle">3</div>
+        <div class="circle">4</div>
+      </div>
+
+      <button class="btn" id="prev" disabled>Prev</button>
+      <button class="btn" id="next">Next</button>
+      
+    </div>
+  
+
+  <script src="project2.js"></script>
+  
+</body>
 </html>
