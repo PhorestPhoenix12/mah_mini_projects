@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Project 3</title>
+   <link rel="stylesheet" type="text/css" href="project2.css">
     <script>
-        // JavaScript to add active class to the current navigation link
+        // Js to give active class to the nav link
         document.addEventListener("DOMContentLoaded", function() {
             var links = document.querySelectorAll("nav ul li a");
             var currentFile = window.location.pathname.split("/").pop();
-
             for (var i = 0; i < links.length; i++) {
                 var linkFile = links[i].href.split("/").pop();
                 if (linkFile === currentFile) {
@@ -22,32 +21,22 @@
 </head>
 <body>
     <header>
-        <h1 style="color: #fff;">Loca-Lunch: Contact</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="resources.html">Local Resources</a></li>
-                <li><a href="services.html">Munchy Mouse</a></li>
-                <li><a href="jeffrey.html">Munchy Mouse 2</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="project1.html">Expanding Cards</a></li>
+                <li><a href="project2.html">Progression Steps</a></li>
+                <li><a href="project3.html class="active"">Rotating Navigation</a></li>
             </ul>
         </nav>
     </header>
+      
 
-    <section>
-        <h2>Contact Us</h2>
-        <div class="contact-info">
-            <p>If you are curious about our work or interested in volunteering opportunities with Loca-Lunch, please reach out to us using the information below:</p>
-            <ul>
-                <li>Email: info@foodnonprofit.org</li>
-                <li>Phone: 123-456-7890</li>
-            </ul>
-        </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2023 Loca-Lunch. All rights reserved.</p>
-    </footer>
+
+    
+
+  <script src="project3.js"></script>
+  
 </body>
 </html>
